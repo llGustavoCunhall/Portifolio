@@ -2,15 +2,29 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+  @media (max-width: 700px) {
+    h1 {
+      padding-top: 4rem;
+      font-size: 3rem;
+    }
+  }
+
+  padding-bottom: 8rem;
+  border-bottom: 3px solid ${({ theme }) => theme.primary};
 
   > section {
     width: 100%;
+    max-width: 50%;
     margin-top: 7rem;
     display: flex;
     gap: 1.5rem;
-
-    padding-bottom: 8rem;
-    border-bottom: 3px solid ${({ theme }) => theme.primary};
 
     @media (max-width: 1000px) {
       gap: 1rem;
@@ -29,7 +43,7 @@ export const ItemContainer = styled.div`
     background: ${({ theme }) => theme.gradient};
     padding: 1rem;
     padding-top: 2.5rem;
-    height: 20rem;
+    height: 26rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -45,7 +59,7 @@ export const ItemContainer = styled.div`
 
     h2 {
       color: ${({ theme }) => theme.secondary};
-      font-size: 1%.5;
+      font-size: 1.5;
       font-weight: 300;
       margin-bottom: 1rem;
     }
@@ -68,7 +82,7 @@ export const ItemContainer = styled.div`
 
   @media (max-width: 1000px) {
     > div {
-      height: 15rem;
+      height: 21rem;
       padding-top: 1.5rem;
     }
 
