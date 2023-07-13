@@ -1,3 +1,4 @@
+import { darken } from 'polished';
 import styled from 'styled-components';
 
 interface ProjetoProps {
@@ -19,6 +20,33 @@ export const Container = styled.section`
 
     @media (max-width: 1000px) {
       gap: 2rem;
+    }
+  }
+
+  > button {
+    background: ${({ theme }) => theme.primary};
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition: 0.5s;
+
+    &:hover {
+      background: ${({ theme }) => darken(0.05, theme.primary)};
+    }
+
+    a {
+      text-transform: uppercase;
+      color: #fff;
+      font-style: 1.5rem;
+      font-weight: 300;
+    }
+
+    @media (max-width: 500px) {
+      padding: 1rem;
+
+      a {
+        font-size: 1rem;
+      }
     }
   }
 `;
@@ -168,6 +196,30 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
         > section > div.text {
           left: 1rem;
         }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    height: 17rem;
+  }
+
+  @media (max-width: 450px) {
+    > button {
+      height: auto;
+
+      a {
+        font-size: 1.5rem;
+        gap: 0.8rem;
+      }
+    }
+
+    > section > div.text {
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1rem;
       }
     }
   }
