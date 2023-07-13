@@ -16,7 +16,8 @@ export const Container = styled.section`
   }
 
   > div {
-    flex: 4;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width: 1450px) {
@@ -46,6 +47,7 @@ export const Container = styled.section`
 export const TextContainer = styled.section`
   margin-bottom: 2rem;
   width: 100%;
+  margin-left: 1.5rem;
 
   h1 {
     font-size: 8rem;
@@ -80,28 +82,25 @@ export const TextContainer = styled.section`
 export const InfosContainer = styled.section`
   width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-`;
-
-export const CodeItem = styled.pre`
   background: ${({ theme }) => theme.gradient};
-  padding: 2rem;
   font-family: 'JetBrains Mono', monospace;
-  font-weight: 300;
-  color: #fff;
-  width: 24rem;
-  align-self: flex-start;
   transition: 1s;
+  gap: 2rem;
+  margin-right: 2.5rem;
+
+  span.purple {
+    color: #c38cdd;
+  }
 
   @media (max-width: 1450px) {
     width: 18rem;
     padding: 1.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   @media (max-width: 1000px) {
     width: 100%;
+    margin-right: 0;
   }
 
   &:hover {
@@ -110,24 +109,5 @@ export const CodeItem = styled.pre`
 
   &:last-child {
     align-self: flex-end;
-  }
-
-  > div {
-    margin: 0.2rem 0;
-    margin-left: 1rem;
-  }
-
-  span.purple {
-    color: #c38cdd;
-  }
-
-  span.blue {
-    color: #7ac7e3;
-  }
-
-  span.comment {
-    color: ${({ theme }) => theme.text};
-    margin-bottom: 1rem;
-    display: block;
   }
 `;
