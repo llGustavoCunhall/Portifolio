@@ -7,10 +7,14 @@ interface ProjetoProps {
 
 export const Container = styled.section`
   width: 100%;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5rem;
+
+  padding-bottom: 8rem;
+  border-bottom: 3px solid ${({ theme }) => theme.primary};
 
   > section {
     width: 100%;
