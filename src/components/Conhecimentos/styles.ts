@@ -4,6 +4,9 @@ export const Container = styled.section`
   width: 100%;
   margin-top: 3rem;
 
+  padding-bottom: 8rem;
+  border-bottom: 3px solid ${({ theme }) => theme.primary};
+
   > section {
     width: 100%;
     margin-top: 8rem;
@@ -11,6 +14,7 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     gap: 8rem;
+    flex-wrap: wrap;
   }
 
   @media (max-width: 1000px) {
@@ -20,7 +24,6 @@ export const Container = styled.section`
   @media (max-width: 700px) {
     gap: 3rem;
     flex-wrap: wrap;
-    margin-top: 5rem;
   }
 `;
 
@@ -49,6 +52,17 @@ export const ConhecimentoContainer = styled.div`
     svg {
       color: ${({ theme }) => theme.primary};
       transform: scale(0.95);
+    }
+  }
+
+  @media (max-width: 1000px) {
+    p {
+      font-size: 1rem;
+    }
+
+    svg {
+      width: 5rem;
+      height: 5rem;
     }
   }
 `;

@@ -8,7 +8,7 @@ import ConhecimentoItem from './ConhecimentoItem';
 export function Conhecimentos() {
   return (
     <Container>
-      <SectionTitle title="Conhecimentos" />
+      <SectionTitle title="#Conhecimentos" />
       <section>
         <ConhecimentoItem title="HTML" icon={<AiFillHtml5 />} />
         <ConhecimentoItem title="Css3" icon={<FaCss3Alt />} />
