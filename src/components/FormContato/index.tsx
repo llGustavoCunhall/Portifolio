@@ -16,7 +16,7 @@ export function FormContato() {
         }
         description={
           <>
-            Preencha p formulário abaixo que
+            Preencha o formulário abaixo que
             <br />
             irei retornar em breve
           </>
