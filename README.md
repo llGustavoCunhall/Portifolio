@@ -31,7 +31,7 @@ vontade para explorar meu trabalho e entrar em contato comigo.
 
 ### Gustavo Cunha - **llgustavo.cunhall@gmail.com**
 
-[Github](https://github.com/llGustavoCunhall) - **https://github.com/llGustavo.Cunhall** </br>
+[Github](https://github.com/llGustavoCunhall) - **https://github.com/llGustavoCunhall** </br>
 [Linkedin](https://www.linkedin.com/in/llgustavocunhall/) - **https://www.linkedin.com/in/llgustavocunhall/**
 
 </br></br>
